@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Start Screen */
+#start-screen, #quiz-screen, #result-popup {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-button, #restart-button {
+  background-color: #007bff;
+  color: white;
+}
+
+#next-button {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Options */
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.option {
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Result Popup */
+.popup-content {
+  text-align: center;
+}
+
+#result-title {
+  font-size: 1.5em;
+}
+
+#result-title.blue {
+  color: blue;
+}
+
+#result-title.green {
+  color: green;
+}
+
+#result-title.red {
+  color: red;
+}
